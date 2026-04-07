@@ -17,7 +17,7 @@ Mobile (Flutter) source code of Savand Expense.
 **Resources**
 
 - [Architecture](./ARCHITECTURE.md)
-- [Testing](./lib/core/README.md)
+- [Testing](./test/README.md)
 
 **Structure**
 
