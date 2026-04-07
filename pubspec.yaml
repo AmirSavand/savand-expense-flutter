@@ -1,0 +1,42 @@
+name: expense
+description: "Your finances, your control — lightweight and limitless."
+publish_to: "none"
+version: 1.3.0+4
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  go_router: ^17.1.0
+  flutter_launcher_icons: ^0.14.4
+  dio: ^5.9.2
+  flutter_secure_storage: ^10.0.0
+  flutter_riverpod: ^3.1.0
+  get_it: ^9.2.1
+  package_info_plus: ^9.0.0
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.9.0
+  intl: ^0.20.2
+  collection: ^1.19.1
+  rxdart: ^0.28.0
+  riverpod_annotation: ^4.0.2
+  shimmer: ^3.0.0
+  google_fonts: ^8.0.2
+  fl_chart: ^1.2.0
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.13.1
+  freezed: ^3.2.3
+  json_serializable: ^6.11.2
+  riverpod_generator: ^4.0.3
+  test: ^1.30.0
+
+flutter:
+  uses-material-design: true
