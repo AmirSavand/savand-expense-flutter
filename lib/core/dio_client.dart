@@ -18,6 +18,9 @@ String baseUrl() {
 /// Triggers when JWT expires.
 final onJwtExpire = PublishSubject<void>();
 
+/// Whether to use fake delay in debug mode.
+const fakeDelay = false;
+
 /// Creates and configures a [Dio] HTTP client with base options and auth
 /// interceptor.
 Dio createDioClient() {
@@ -65,7 +68,7 @@ Dio createDioClient() {
   }
 
   // Add fake delay in debug mode
-  if (kDebugMode) {
+  if (kDebugMode && fakeDelay) {
     dio.interceptors.add(
       InterceptorsWrapper(
         onResponse: (response, handler) async {
