@@ -4,8 +4,20 @@ import 'package:flutter/material.dart';
 class AppAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final List<Widget>? actions;
+  final PreferredSizeWidget? bottom;
+  final double? scrolledUnderElevation;
+  final double? elevation;
+  final Color? backgroundColor;
 
-  const AppAppBar({super.key, required this.title, this.actions});
+  const AppAppBar({
+    super.key,
+    required this.title,
+    this.actions,
+    this.bottom,
+    this.scrolledUnderElevation,
+    this.elevation,
+    this.backgroundColor,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +27,15 @@ class AppAppBar extends StatelessWidget implements PreferredSizeWidget {
             icon: const Icon(Icons.menu),
             onPressed: () => rootScaffoldKey.currentState?.openDrawer(),
           );
-    return AppBar(leading: leading, title: Text(title), actions: actions);
+    return AppBar(
+      leading: leading,
+      title: Text(title),
+      actions: actions,
+      bottom: bottom,
+      scrolledUnderElevation: scrolledUnderElevation,
+      elevation: elevation,
+      backgroundColor: backgroundColor,
+    );
   }
 
   @override
