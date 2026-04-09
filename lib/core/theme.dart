@@ -5,8 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 ThemeData _build(ThemeData base) =>
     base.copyWith(textTheme: GoogleFonts.ubuntuTextTheme(base.textTheme));
 
-final lightTheme = _build(ThemeData.light());
-final darkTheme = _build(ThemeData.dark());
+final lightTheme = _build(ThemeData.light(useMaterial3: true));
+final darkTheme = _build(ThemeData.dark(useMaterial3: true));
 
 class ThemeColors {
   static final success = displayColor('#27ae60');
